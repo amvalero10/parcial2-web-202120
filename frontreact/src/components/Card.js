@@ -1,4 +1,5 @@
 import React from 'react';
+import './Card.scss'
 
 /**
  * Using react component based on function
@@ -7,8 +8,14 @@ import React from 'react';
  */
 export const Card = (props) => {
   const { name, picture, price, isActive } = props;
+
+  var active
+  // console.log(isActive)
+  isActive === "true"? active="card":active="inactive";
+
+
   return (
-    <div>
+    <div className={active}>
       <div className='card-header'>
         <p className='card-title'>{name}</p>
         <span className='material-icons card-favorite'>favorite_border</span>

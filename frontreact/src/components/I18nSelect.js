@@ -1,6 +1,23 @@
 import React from 'react';
 import { LOCALES } from '../i18n/locales';
 
+
 export const I18nSelect = () => {
-  return <p>Change for i18n selector</p>;
+
+
+
+const optionsState= ()=>{
+  console.log('cambiar idioma')
+}
+
+
+
+  return(
+    <div>
+  <button onClick={ ()=> optionsState()} >
+    es/en
+  </button>
+    </div>
+
+  ) 
 };

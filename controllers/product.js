@@ -1,7 +1,13 @@
-const data = require('../assets/data');
+const data = require('../assets/data.js');
 
-function getProducts(query) {
+function GetProducts(query) {
+
+  console.log('estoy aqui:',query)
+
   return data;
+  
 }
 
-module.exports = { getProducts };
+
+module.exports = GetProducts();
+// module.exports = { getProducts };
